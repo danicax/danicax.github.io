@@ -331,11 +331,46 @@
         </div>
         </section>
         <!-- Fourth Section: Projects -->
+         
         
         <section id="projects" class="section scrollspy">
             <h3 class="page-title white-text teal">Projects</h3>
             <div class="container">
                 <div class="row">
+
+                     <!-- project -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="quiz app" src="/assets/img/corpia.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Corpia<i
+          class="mdi-navigation-more-vert right"></i></span>
+                                <p>
+                                    Agent Memory and Enterprise Context company. Admitted YC S2026, valued at $40M.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title grey-text"><small>Accomplishments</small><i
+          class="mdi-navigation-close right"></i></span>
+                                <ul>
+                                    <li><b>Tools:</b> Python, AWS, Microsoft Azure, Google Cloud, Codex, Claude Code </li>
+                                    <li>Built connectors, parsed agent traces, created structured data for synthesized layer. Hosted sandboxed agents, backend, multi-tenant architecture on AWS. </li>
+                                    <li>Acquired 5 enterprise customers. Demoed to VP of Qualcomm and Merck. </li>
+                                </ul>
+                                <div class="card-action">
+                                    
+                <a aria-label="Visit " href="https://www.corpia.io/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-external-link"></i></a>
+                <a aria-label="Visit " href="https://www.tella.tv/video/centralize-your-company-knowledge-with-corpia-ddz4" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-external-link"></i></a>
+                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- project -->
                     <div class="col s12 m6 l4">
                         <div class="card medium">
@@ -1022,12 +1057,59 @@ class="mdi-navigation-close right"></i></span>
         <section id="experience" class="section scrollspy">
             <h3 class="page-title white-text teal">Experience</h3>
             <div class="container">
+                <!-- Nvidia -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a href="https://www.nvidia.com/en-us/" target="_blank"><img src="/assets/img/nvidia.jpeg" class="responsive-img center-block" alt="NVIDIA logo" /></a>
+                            </div>
+                            <div class="col s12 m10">
+                                <p><span class="card-title"><a href="https://www.nvidia.com/en-us/" target="_blank" class="teal-text hoverline">NVIDIA</a></span></p>
+                            </div>
+                        </div>
+                        <div class="role brown-text text-darken-2">System Software Engineer IC2</div>
+                        <ul>
+                            <li>Worked concurrently on 2 teams: GPU Simulation (sim chip output) &amp; LLM tooling (Agents &amp; RAG)</li>
+                            <li>Proposed &amp; implemented architectural changes to combine Compute Warp States and Mesh Thread Groups into a unified compute shader class through Bridging. Refactoring removed the need for devs to implement compute functions twice due to virtual inheritance structure</li>
+                            <li>Built knob validation system, on p4 submission, checks if knobs have been categorized and warns user to remove from deprecation list</li>
+                            <li>On LLM team, shipped: Keyword filtering, multi file &amp; link indexing &amp; reading, streaming delay, database migrations, terminal agents, agent configurations and tools, agent JSON/PNG/HTML/LOG parsing, hybrid RAG with Glean, Agents for Perforce, regression dashboards, bug fixes</li>
+                            <li>Re-orged on to AI Tooling team and shipped: SASS assembly behaviour diff tool, automatic ISA to Op code library workflow, GPU Simulation performance auditing, hardware constraint verification, server rack allocation optimization, EDA efficiency anomoly detection.</li>
+                            <li>Worked with hardware developers on 8+ teams (including formal verification, chip sim, perf sim, SASS, MODS, ISA, Server farm, electronic design etc) to identify areas that need tools, define requirements, build tools, tested and iterated until tools solved use cases</li>
+                            <li>Completely automated ISA to Op code development workflow with handoff to continue automation into GPU modeling. 100% accuracy over 5 months in production shipping 100+ change lists.</li>
+                        </ul>
+                    </div>
+                    <div class="card-action"><span>Sept 2025 - Present | Santa Clara, CA</span></div>
+                </div>
+
+                <!-- Corpia / Y Combinator -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a href="https://www.ycombinator.com/" target="_blank"><img src="/assets/img/yc.jpeg" class="responsive-img center-block" alt="Y Combinator logo" /></a>
+                            </div>
+                            <div class="col s12 m10">
+                                <p><span class="card-title"><a href="https://www.ycombinator.com/" target="_blank" class="teal-text hoverline">Corpia (Y Combinator S26)</a></span></p>
+                            </div>
+                        </div>
+                        <div class="role brown-text text-darken-2">Cofounder &amp; CTO</div>
+                        <ul>
+                            <li>Built enterprise context layer + team agent context from agent traces. Accepted YCombinator S26, company evaluated at 40 Million</li>
+                            <li>Presented to VP of Qualcomm, VP of Merck, 5 midsized companies, acquired 4 startup customers, conducted customer discovery meetings</li>
+                            <li>Designed and built entire context layer pipeline, deployed on AWS, database setup, w/ multi-tenancy architecture, iterated on w/ customers</li>
+                            <li>Improved retrieval latency, experimented with synthesis layers and agent memory structures, got SOTA on Evolving Memory Evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="card-action"><span>April 2026 - June 2026 | San Francisco, CA</span></div>
+                </div>
+
                 <!-- Latest Experience -->
                 <div class="card">
                     <div class="card-content">
                         <div class="row">
                             <div class="col s12 m2">
-                                <a href="https://openai.com/" target="_blank"><img src="/assets/img/openai.jpeg" class="responsive-img center-block" /></a>
+                                <a href="https://openai.com/" target="_blank"><img src="/assets/img/openai.jpeg" class="responsive-img center-block" alt="OpenAI logo" /></a>
                            
                                  </div>
                             <!-- <div class="col s12 m10"> -->
@@ -1041,18 +1123,14 @@ class="mdi-navigation-close right"></i></span>
                         <div class="role brown-text text-darken-2">Member of Technical Staff</div>
                         <ul>
 
-                            <li>
-                                NDA
-                            </li>
-                            <!--
-                            <li>
-                                <b>Tools:</b> 
-                            </li>
-                            -->
+                            <li>Designed, built, shipped, and maintained 3 new products: ChatGPT API, Apple Intelligence &amp; Kakao, worked with legal, UI, partner companies</li>
+                            <li>Built new security scoping restricting 3rd party access in Rust &amp; go. Migrated codebase, async workers, synthetics to comply with new auth</li>
+                            <li>Integrated biscuit auth between services to mitigate abuse. Developed unit and integration tests to test across every service owned by team</li>
+                            <li>Debugged image gen and file gen pipelines, debugged synthetics, identified bugs via Datadog to minimize/prevent tool downtime in Python</li>
                         </ul>
                     </div>
                     <div class="card-action">
-                        <span>July 2024 - Present | San Francisco, CA</span>
+                        <span>July 2025 - Sept 2025 | San Francisco, CA</span>
                     </div>
                 </div>
 
